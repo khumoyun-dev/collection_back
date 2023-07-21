@@ -30,7 +30,7 @@ mongoose.set('strictQuery', false);
 const start = async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://naztya12323:${process.env.DB_PASSWORD}@cluster0.ov8yi38.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+      `mongodb+srv://khumoyun:${process.env.DB_PASSWORD}@atlascluster.e9cqxex.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
     );
     app.listen(PORT, () => console.log('server started'));
   } catch (error) {

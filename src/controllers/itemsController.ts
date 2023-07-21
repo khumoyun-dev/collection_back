@@ -40,7 +40,7 @@ const getItemsByCollectionId = async (request: Request, response: Response) => {
   }
 };
 
-const createItem = async (request: Request, response: Response) => {
+const createItem = async (request: Request, response: Response) => {  
   try {
     const validationErrors = validationResult(request);
     if (!validationErrors.isEmpty()) {
